@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background-light: #F8FAFC;
+  --color-background-dark: #0A0F1E;
+  --color-background-darkSecondary: #111827;
+  --color-accent: #0CC8A8;
+  --color-severity-critical: #F43F5E;
+  --color-severity-high: #FB923C;
+  --color-severity-medium: #FACC15;
+  --color-severity-low: #38BDF8;
+}
+
+@layer base {
+  body {
+    @apply antialiased text-slate-900 bg-background-light dark:text-slate-100 dark:bg-background-dark;
+  }
+}
+
+.dark {
+  color-scheme: dark;
+}
